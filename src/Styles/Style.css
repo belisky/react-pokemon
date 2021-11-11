@@ -24,6 +24,7 @@ a,li,ul {
     width:80%;
     margin:0 auto;
     justify-content: center;
+   
 }
 
 .header {
@@ -31,7 +32,7 @@ a,li,ul {
     text-align: center;
     background-image:url(../img/Pokemon_logo.svg.webp) ;
     background-size:contain;
-    background-blend-mode: multiply;
+    background-blend-mode:color-dodge;
     font-size: 2em;
  
 }
@@ -103,11 +104,12 @@ a,li,ul {
 .btn + .btn {
     margin-left: 1em;
 }
-.pagination {
+ .pagination {
+     margin:0 auto;
     padding:3em 0;
-    justify-content: flex-start;
     
-}
+
+ }
 
  
  
