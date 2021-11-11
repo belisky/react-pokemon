@@ -3,9 +3,9 @@
  
  const PokemonList = ({pokemons}) => {
      return (
-           <div>
+           <div className="main container">
                {pokemons.map(pokemon => (
-                   <div key={pokemon}>{pokemon}</div>
+                   <div className="pokemon" key={pokemon}>{pokemon}</div>
                ))}
            </div>
      )

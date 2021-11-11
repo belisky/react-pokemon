@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2,p {
+    font-weight: 400;
+
+}
+a,li,ul {
+    text-decoration: none;
+  
+}
+
+
+.container {
+ 
+    width:80%;
+    margin:0 auto;
+    justify-content: center;
+}
+
+.header {
+    padding:3em;
+    text-align: center;
+    background-image:url(../img/Pokemon_logo.svg.webp) ;
+    background-size:contain;
+    background-blend-mode: multiply;
+    font-size: 2em;
+ 
+}
+
+.pokemon {
+    border:1px solid blue;
+    border-radius: 0.5em;
+    padding:2em 3em;
+    align-items: center;
+    flex:100%;
+    font-weight: 900;
+    font-size: 1.125em;
+}
+
+.navigation {
+    border:1px solid rgb(7, 7, 32);
+    background-color: blue;
+ 
+    padding:1em;
+    border:1px solid yellow;
+}
+.nav-list {
+    display:flex;
+    
+    list-style: none;
+}
+.nav-item + .nav-item {
+    margin-left: 1em;
+  
+}
+.nav-item {
+ 
+  
+    margin:0;
+    text-align: center;
+    align-items: center;
+    
+}
+.nav-link {
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 800;
+    background:inherit;
+    
+    padding:1em;
+    border:1px solid white;
+    border-radius: 0.5em;
+}
+
+ 
+
+.main {
+    display:flex;
+    flex-direction: column;
+    background-image: url(../img/pokemonbg.jpg);
+    background-size:contain;
+    
+}
+
+.btn {
+    padding:1em 1em;
+    border:1px solid blue;
+    border-radius: 0.5em;
+    
+     
+    
+}
+.btn + .btn {
+    margin-left: 1em;
+}
+.pagination {
+    padding:3em 0;
+    justify-content: flex-start;
+    
+}
+
+ 
+ 
+
+ 
+ 

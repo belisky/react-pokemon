@@ -2,11 +2,12 @@ import React,{useEffect, useState} from 'react';
 import PokemonList from "./components/PokemonList"; 
 import axios from 'axios';
 import Pagination from './components/Pagination';
+import  './Styles/Style.css'
 
 
 function App() {
   const[pokemons,setPokemons]=useState([])
-  const[currPageUrl,setCurrPageUrl]=("https://pokeapi.co/api/v2/berry")
+  const[currPageUrl,setCurrPageUrl]=useState("https://pokeapi.co/api/v2/pokemon")
   const[prevPageUrl,setPrevPageUrl]=useState("")
   const[nextPageUrl,setNextPageUrl]=useState("")
   const [loading,setLoading]=useState(true)
@@ -46,9 +47,23 @@ if (loading) return "Loading..."
   return (
     <div >
       
-       <PokemonList pokemons={pokemons}/>
-       <Pagination gotoNextPage={gotoNextPage}
-       gotoPrevPage={gotoPrevPage}/>
+       <nav className="navigation">
+        <div className="container">
+         <ul className="nav-list">
+           <li className="nav-item"   >{prevPageUrl ? <button onClick={gotoPrevPage} className="nav-link">Prev</button> : null}</li>
+           <li className="nav-item"   >{nextPageUrl ? <button onClick={gotoNextPage} className="nav-link">Next</button>: null}</li>
+         </ul>
+        </div>
+       </nav>
+       <div className="header">
+         <div className="container">
+           <h1 className="pokemonbg">Pokemon</h1>
+         </div></div>
+            
+       <PokemonList   pokemons={pokemons}/>
+       <Pagination    gotoNextPage={nextPageUrl ? gotoNextPage : null}
+       gotoPrevPage={prevPageUrl ? gotoPrevPage : null}/>
+    
     </div>
   );
 }

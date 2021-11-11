@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Pagination = ({nextUrl,prevUrl}) => {
+const Pagination = ({gotoNextPage,gotoPrevPage}) => {
     return (
-        <div>
-            <button><a href={nextUrl}>Next</a></button>
-            <button><a href={prevUrl}>Prev</a></button>
+        <div className="pagination container ">
             
+             
+                {gotoPrevPage &&<button className="btn" onClick={gotoPrevPage}>Prev</button>}
+                {gotoNextPage &&<button className="btn" onClick={gotoNextPage}>Next</button>}
+              
         </div>
     )
 }
