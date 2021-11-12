@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({gotoNextPage,gotoPrevPage}) => {
     return (
         <>
             <nav className="navigation">
             <div className="container">
              <ul className="nav-list">
-               <li className="nav-item"   >{prevPageUrl ? <button onClick={gotoPrevPage} className="nav-link">Prev</button> : null}</li>
-               <li className="nav-item"   >{nextPageUrl ? <button onClick={gotoNextPage} className="nav-link">Next</button>: null}</li>
+               <li className="nav-item"   >{gotoPrevPage && <button onClick={gotoPrevPage} className="nav-link">Prev</button> }</li>
+               <li className="nav-item"   >{gotoNextPage && <button onClick={gotoNextPage} className="nav-link">Next</button>}</li>
              </ul>
             </div>
                    </nav>

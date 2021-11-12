@@ -49,7 +49,9 @@ if (loading) return "Loading..."
     <div className="master">
       
        
-       <Header />    
+        <Header gotoNextPage={nextPageUrl ? gotoNextPage : null}
+       gotoPrevPage={prevPageUrl ? gotoPrevPage : null}/>
+       
        <PokemonList   pokemons={pokemons}/>
        <Pagination    gotoNextPage={nextPageUrl ? gotoNextPage : null}
        gotoPrevPage={prevPageUrl ? gotoPrevPage : null}/>
