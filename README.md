@@ -11,7 +11,7 @@
  Just Emmet. Haha...
 
  # New Stuff I Learned.
- I learned how to use hooks USESTATE AND USEEFFECT HOOKS.
+ I learned how to use hooks USESTATE AND USEEFFECT HOOKS.s
  I learned pagination of a react application using boolean logic.
  This was the first time i used the fancy background-img too.
 
