@@ -45,7 +45,7 @@ if (loading) return "Loading..."
 
 
   return (
-    <div >
+    <div className="master">
       
        <nav className="navigation">
         <div className="container">
@@ -58,6 +58,7 @@ if (loading) return "Loading..."
        <div className="header">
          <div className="container">
            <h1 className="pokemonbg">Pokemon</h1>
+           <p className="pokemonbg_p">A list of pokemon character names brought to you by nobel</p>
          </div></div>
             
        <PokemonList   pokemons={pokemons}/>
