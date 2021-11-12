@@ -21,20 +21,68 @@ a,li,ul {
 
 .container {
  
-    width:80%;
+    width:90%;
     margin:0 auto;
     justify-content: center;
    
 }
 
+
 .header {
-    padding:3em;
+   
     text-align: center;
     background-image:url(../img/Pokemon_logo.svg.webp) ;
     background-size:contain;
-    background-blend-mode:color-dodge;
-    font-size: 2em;
+    font-size: 24px;
+    
+     
  
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+@media (min-width:40em) {
+
+    .header {
+   
+        text-align: center;
+        background-image:url(../img/Pokemon_logo.svg.webp) ;
+        background-size:contain;
+        font-size: 24px;   
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        
+
+    }
+    .pokemonbg {
+        text-align:center;
+        padding:1.5em 0;
+        font-size: 3em;
+     
+       
+    }
+    .master {
+        height:100vh;
+    }
+
+    .container {
+ 
+        width:80%;
+        margin:0 auto;
+        justify-content: center;
+       
+    }
+
+}
+.pokemonbg {
+    text-align:center;
+    padding:1em 0;
+    font-size: 3em;
+    
+ 
+   
 }
 
 .pokemon {
@@ -90,26 +138,35 @@ a,li,ul {
     flex-direction: column;
     background-image: url(../img/pokemonbg.jpg);
     background-size:contain;
+    margin-bottom: 2em;
     
 }
 
 .btn {
-    padding:1em 1em;
+    padding:1em 1.5em;
     border:1px solid blue;
     border-radius: 0.5em;
+    font-weight: 700;
+    margin:1em;
     
      
     
 }
-.btn + .btn {
-    margin-left: 1em;
-}
+ 
  .pagination {
-     margin:0 auto;
-    padding:3em 0;
-    
+     display:flex;
+     flex-direction: row;
+    width:20%;
+     align-items: center;
+     justify-content: center;
+     margin:0 40%;
+     margin-bottom: 2em;
 
- }
+   }
+
+   .master {
+       height:100vh;
+   }
 
  
  
