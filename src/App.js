@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react';
 import PokemonList from "./components/PokemonList"; 
 import axios from 'axios';
 import Pagination from './components/Pagination';
+import Header from './components/Header';
 import  './Styles/Style.css'
 
 
@@ -47,20 +48,8 @@ if (loading) return "Loading..."
   return (
     <div className="master">
       
-       <nav className="navigation">
-        <div className="container">
-         <ul className="nav-list">
-           <li className="nav-item"   >{prevPageUrl ? <button onClick={gotoPrevPage} className="nav-link">Prev</button> : null}</li>
-           <li className="nav-item"   >{nextPageUrl ? <button onClick={gotoNextPage} className="nav-link">Next</button>: null}</li>
-         </ul>
-        </div>
-       </nav>
-       <div className="header">
-         <div className="container">
-           <h1 className="pokemonbg">Pokemon</h1>
-           <p className="pokemonbg_p">A list of pokemon character names brought to you by nobel</p>
-         </div></div>
-            
+       
+       <Header />    
        <PokemonList   pokemons={pokemons}/>
        <Pagination    gotoNextPage={nextPageUrl ? gotoNextPage : null}
        gotoPrevPage={prevPageUrl ? gotoPrevPage : null}/>
